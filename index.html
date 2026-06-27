@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WC 2026 — Penalty Shootout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="overlay">
+      <div class="wc-badge">⚽ FIFA WORLD CUP 2026</div>
+      <div class="overlay-title">PENALTY<br />SHOOTOUT</div>
+      <div class="overlay-sub">CAN YOU BEAT THE KEEPER?</div>
+      <button class="overlay-play-btn" onclick="startGame()">KICK OFF</button>
+    </div>
+
+    <div id="wrap">
+      <!-- STADIUM -->
+      <div id="stadium">
+        <div class="crowd"><div class="crowd-blur"></div></div>
+        <div class="pitch-lines"></div>
+        <div class="penalty-box"></div>
+        <div class="six-yard-box"></div>
+        <div class="penalty-arc"></div>
+        <div class="penalty-spot"></div>
+
+        <div id="goal">
+          <div class="goal-post-l"></div>
+          <div class="goal-post-r"></div>
+          <div class="goal-crossbar"></div>
+          <div class="goal-net"></div>
+          <div class="goal-flash" id="goal-flash"></div>
+        </div>
+
+        <div id="gk">
+          <div class="gk-head"></div>
+          <div class="gk-arms"></div>
+          <div class="gk-body"></div>
+          <div class="gk-legs">
+            <div class="gk-leg"></div>
+            <div class="gk-leg"></div>
+          </div>
+        </div>
+
+        <div id="ball">
+          <div class="ball-inner"></div>
+          <div class="ball-shadow"></div>
+        </div>
+
+        <div id="player">
+          <div class="p-head"></div>
+          <div class="p-arms"></div>
+          <div class="p-body"></div>
+          <div class="p-legs">
+            <div class="p-leg"></div>
+            <div class="p-leg"></div>
+          </div>
+        </div>
+
+        <div id="result-display"></div>
+      </div>
+
+      <!-- HUD -->
+      <div id="hud">
+        <div class="score-box">
+          <div class="score-label">Goals</div>
+          <div class="score-val" id="goals-val">0</div>
+        </div>
+        <div class="hud-divider"></div>
+        <div style="text-align: center; flex: 1">
+          <div class="round-label">Round</div>
+          <span class="round-num" id="round-val">1</span>
+        </div>
+        <div class="hud-divider"></div>
+        <div class="score-box">
+          <div class="score-label">Saves</div>
+          <div class="score-val saves-val" id="saves-val">0</div>
+        </div>
+      </div>
+
+      <!-- DIRECTION BUTTONS: TL | C | TR / BL | RESTART | BR -->
+      <div id="dir-panel">
+        <button class="dir-btn" data-dir="tl" onclick="selectDir(this)">
+          ↖ Top Left
+        </button>
+        <button class="dir-btn" data-dir="c" onclick="selectDir(this)">
+          ● Centre
+        </button>
+        <button class="dir-btn" data-dir="tr" onclick="selectDir(this)">
+          Top Right ↗
+        </button>
+        <button class="dir-btn" data-dir="bl" onclick="selectDir(this)">
+          ↙ Bot Left
+        </button>
+        <button id="restart-btn" onclick="restartGame()">↺ Restart</button>
+        <button class="dir-btn" data-dir="br" onclick="selectDir(this)">
+          Bot Right ↘
+        </button>
+      </div>
+
+      <!-- SHOOT -->
+      <div id="action-row">
+        <button id="shoot-btn" onclick="shoot()" disabled>SHOOT ⚽</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
