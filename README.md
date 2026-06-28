@@ -2,9 +2,9 @@
 
 A fun and interactive Penalty Shootout Game built with pure HTML, CSS, and Vanilla JavaScript.
 
-The player takes penalty kicks by selecting a shooting direction, while the goalkeeper attempts to predict and save the shot. The final result depends on the player’s decision and the goalkeeper’s reaction.
+The player takes penalty kicks by selecting a shooting direction, while the goalkeeper tries to predict and save the shot. The final result depends on the player’s decision and the goalkeeper’s reaction.
 
-This project is a lightweight browser-based game created to practice frontend development concepts such as DOM manipulation, game logic, animations, and user interaction.
+This lightweight browser-based game was created to practice frontend development concepts such as DOM manipulation, game logic, animations, and user interaction.
 
 ⸻
 
@@ -14,7 +14,7 @@ This project is a lightweight browser-based game created to practice frontend de
 
 👉 https://coognaac.github.io/penalty_shootout/
 
-The game works on both desktop and mobile browsers.
+Works smoothly on both desktop and mobile browsers.
 
 ⸻
 
@@ -32,7 +32,7 @@ The game works on both desktop and mobile browsers.
 * 🔊 Sound effects
 * 🎨 Football-themed user interface
 * ✨ Smooth animations and visual effects
-* 📱 Responsive design for different screen sizes
+* 📱 Responsive design
 * ⚡ Lightweight and fast performance
 * 🚫 No frameworks or external libraries
 
@@ -41,11 +41,11 @@ The game works on both desktop and mobile browsers.
 🕹️ How To Play
 
 1. Choose your shooting direction.
-2. The goalkeeper randomly chooses a direction to defend.
+2. The goalkeeper randomly selects a direction to defend.
 3. The game compares:
 
 Player Shot Direction
-            +
+          +
 Goalkeeper Save Direction
 
 If both directions are the same:
@@ -54,7 +54,7 @@ If both directions are the same:
 
 Otherwise:
 
-⚽ Goal!
+⚽ GOAL!
 
 The score updates automatically after every penalty attempt.
 
@@ -62,7 +62,7 @@ The score updates automatically after every penalty attempt.
 
 🛠️ Technologies Used
 
-This project was created using:
+Built with:
 
 * HTML5
 * CSS3
@@ -118,13 +118,15 @@ JavaScript handles:
 
 🚀 Run The Project Locally
 
-Option 1: Clone Repository
+Clone the repository:
 
 git clone https://github.com/Coognaac/penalty_shootout.git
 
-Open the project folder.
+Open the project folder:
 
-Then run:
+cd penalty_shootout
+
+Then open:
 
 index.html
 
@@ -134,13 +136,11 @@ No installation required.
 
 ⸻
 
-Option 2: GitHub Pages
+🌐 GitHub Pages
 
-The project can be hosted easily using GitHub Pages.
+This project is deployed using GitHub Pages.
 
-After enabling GitHub Pages:
-
-Your game will be available online through:
+Live version:
 
 https://coognaac.github.io/penalty_shootout/
 
