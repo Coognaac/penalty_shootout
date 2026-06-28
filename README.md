@@ -1,71 +1,195 @@
-# ⚽ Penalty Shootout Simulator
+⚽ Penalty Shootout Simulator
 
-A fun and interactive **Penalty Shootout Game** built with pure **HTML, CSS, and Vanilla JavaScript**.
+A fun and interactive Penalty Shootout Game built with pure HTML, CSS, and Vanilla JavaScript.
 
-The player takes penalty kicks by choosing a shooting direction, while the goalkeeper uses a prediction system to attempt saves. Every shot outcome is determined by the interaction between the player's decision and the goalkeeper's reaction.
+The player takes penalty kicks by selecting a shooting direction, while the goalkeeper attempts to predict and save the shot. The final result depends on the player’s decision and the goalkeeper’s reaction.
 
-A lightweight browser-based game created to practice frontend development concepts including **DOM manipulation, JavaScript logic, animations, and user interactions**.
+This project is a lightweight browser-based game created to practice frontend development concepts such as DOM manipulation, game logic, animations, and user interaction.
 
----
+⸻
 
-## 🎮 Live Demo
+🎮 Live Demo
 
 🚀 Play the game online:
 
 👉 https://coognaac.github.io/penalty_shootout/
 
-*(Works on desktop and mobile browsers)*
+The game works on both desktop and mobile browsers.
 
----
+⸻
 
-## ✨ Features
+✨ Features
 
-- ⚽ Interactive penalty kick gameplay
-- 🥅 Goalkeeper prediction and save system
-- 🎯 5 shooting directions:
-  - Left Top
-  - Left Bottom
-  - Center
-  - Right Top
-  - Right Bottom
-- 🏆 Real-time score tracking
-- 🔊 Sound effects
-- 🎨 Football-themed interface
-- ✨ Smooth animations and visual feedback
-- 📱 Fully responsive design
-- ⚡ Fast and lightweight (no dependencies)
+* ⚽ Interactive penalty kick gameplay
+* 🥅 Goalkeeper prediction and save system
+* 🎯 Multiple shooting directions:
+    * Left Top
+    * Left Bottom
+    * Center
+    * Right Top
+    * Right Bottom
+* 🏆 Real-time score tracking
+* 🔊 Sound effects
+* 🎨 Football-themed user interface
+* ✨ Smooth animations and visual effects
+* 📱 Responsive design for different screen sizes
+* ⚡ Lightweight and fast performance
+* 🚫 No frameworks or external libraries
 
----
+⸻
 
-## 🕹️ Gameplay
+🕹️ How To Play
 
 1. Choose your shooting direction.
-2. The goalkeeper selects a direction to defend.
-3. The game compares both choices.
+2. The goalkeeper randomly chooses a direction to defend.
+3. The game compares:
 
-If:
+Player Shot Direction
+            +
+Goalkeeper Save Direction
 
-🧤 **Goalkeeper direction = Shot direction**  
-→ The goalkeeper saves the penalty.
+If both directions are the same:
+
+🧤 Goalkeeper Saves!
 
 Otherwise:
 
-⚽ **Goal!**
+⚽ Goal!
 
-The score updates automatically after every shot.
+The score updates automatically after every penalty attempt.
 
----
+⸻
 
-## 🛠️ Technologies Used
+🛠️ Technologies Used
 
-Built using:
+This project was created using:
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
+* HTML5
+* CSS3
+* Vanilla JavaScript
 
-No frameworks, libraries, or backend were used.
+No frameworks, external libraries, or backend technologies were used.
 
----
+⸻
 
-## 📂 Project Structure
+📂 Project Structure
+
+penalty_shootout/
+│
+├── index.html          # Main game structure
+│
+├── style.css           # Styling, animations and layout
+│
+├── script.js           # Game logic and interactions
+│
+└── assets/
+    │
+    ├── images/         # Game images
+    │
+    └── sounds/         # Audio effects
+
+⸻
+
+⚙️ Game Logic
+
+The game follows a simple decision-based system:
+
+Player selects a direction
+              ↓
+Goalkeeper predicts a direction
+              ↓
+Both directions are compared
+              ↓
+Goal or Save result
+              ↓
+Score update
+
+JavaScript handles:
+
+* User interactions
+* Random goalkeeper decisions
+* Game state management
+* Score calculation
+* DOM updates
+* Animations
+* Sound effects
+
+⸻
+
+🚀 Run The Project Locally
+
+Option 1: Clone Repository
+
+git clone https://github.com/Coognaac/penalty_shootout.git
+
+Open the project folder.
+
+Then run:
+
+index.html
+
+in your browser.
+
+No installation required.
+
+⸻
+
+Option 2: GitHub Pages
+
+The project can be hosted easily using GitHub Pages.
+
+After enabling GitHub Pages:
+
+Your game will be available online through:
+
+https://coognaac.github.io/penalty_shootout/
+
+⸻
+
+🎯 Learning Goals
+
+This project demonstrates practical usage of:
+
+* DOM manipulation
+* JavaScript event handling
+* Random number generation
+* Conditional logic
+* Game state management
+* UI updates
+* CSS animations
+* Basic browser game development
+
+⸻
+
+🔮 Future Improvements
+
+Possible future updates:
+
+* 🌍 Multiplayer mode
+* 🏆 Tournament system
+* 🤖 Improved goalkeeper AI
+* 🎮 Difficulty levels
+* 🥇 Online leaderboard
+* 👤 Player customization
+* 🎥 More realistic animations
+* ⚽ Advanced physics-based shooting system
+
+⸻
+
+👨‍💻 Author
+
+Created by Coognaac
+
+GitHub:
+
+https://github.com/Coognaac
+
+⸻
+
+⭐ Support
+
+If you like this project, consider giving it a ⭐ star on GitHub.
+
+Your support helps improve future projects.
+
+⚽ Thanks for playing!
